@@ -21,7 +21,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/leeco/msm8996-common/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
-    vendor/leeco/msm8996-common/proprietary/etc/UEISettings:$(TARGET_COPY_OUT_SYSTEM)/etc/UEISettings \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/camera/ov8865_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8865_chromatix.xml \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/camera/ov8865_ofilm_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8865_ofilm_chromatix.xml \
     vendor/leeco/msm8996-common/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
