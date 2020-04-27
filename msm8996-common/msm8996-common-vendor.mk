@@ -21,6 +21,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/leeco/msm8996-common/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
+    vendor/leeco/msm8996-common/proprietary/etc/UEISettings:$(TARGET_COPY_OUT_SYSTEM)/etc/UEISettings \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/camera/ov8865_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8865_chromatix.xml \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/camera/ov8865_ofilm_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8865_ofilm_chromatix.xml \
     vendor/leeco/msm8996-common/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
@@ -177,7 +178,6 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
-    vendor/leeco/msm8996-common/proprietary/vendor/etc/UEISettings:$(TARGET_COPY_OUT_VENDOR)/etc/UEISettings \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
@@ -663,6 +663,7 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libthermalclient \
     QtiTelephonyService \
+    UEIQuicksetSDKLeTV \
     uceShimService \
     WfdService \
     com.qualcomm.location \
@@ -671,7 +672,6 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
-    UEIQuicksetSDKLeTV \
     PowerOffAlarm \
     dpmserviceapp \
     WfdCommon
